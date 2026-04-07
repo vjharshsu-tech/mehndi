@@ -223,6 +223,45 @@ export default function App() {
         </div>
       </section>
 
+      {/* FOUNDER */}
+      <section style={{ padding: "80px 24px", maxWidth: 800, margin: "0 auto" }}>
+        <Reveal>
+          <div style={{ textAlign: "center", marginBottom: 40 }}>
+            <div className="badge">Meet the Founder</div>
+            <div className="divider" />
+          </div>
+        </Reveal>
+        <Reveal delay={0.1}>
+          <div className="card-hover" style={{ background: "#fff", border: "1px solid rgba(184,134,11,0.2)", borderRadius: 12, padding: "48px 40px", boxShadow: "0 8px 40px rgba(184,134,11,0.08)", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", gap: 20 }}>
+            <PaisleyBg />
+            {/* Avatar circle */}
+            <div style={{ position: "relative", width: 100, height: 100 }}>
+              <div className="pulse-ring" style={{ width: 100, height: 100, top: 0, left: 0 }} />
+              <div style={{ width: 100, height: 100, borderRadius: "50%", background: `linear-gradient(135deg, ${s.gold}, #d4a843)`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 40, boxShadow: "0 6px 24px rgba(184,134,11,0.3)" }}>
+                🌿
+              </div>
+            </div>
+            {/* Name & Title */}
+            <div>
+              <h3 style={{ fontFamily: "'Cinzel', serif", fontSize: 26, fontWeight: 500, color: s.dark, marginBottom: 6, letterSpacing: "0.04em" }}>M. Sumalatha</h3>
+              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontSize: 16, color: s.gold, letterSpacing: "0.08em" }}>Founder & Master Henna Artist</div>
+            </div>
+            {/* Divider */}
+            <div style={{ width: 50, height: 1, background: `linear-gradient(90deg, transparent, ${s.gold}, transparent)` }} />
+            {/* Bio */}
+            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 18, color: s.muted, lineHeight: 1.85, fontWeight: 300, maxWidth: 560 }}>
+              With a lifelong passion for the ancient art of henna, M. Sumalatha founded Shukla Mehendi Arts to make traditional mehendi education accessible to every aspiring artist. Her expertise spans Arabic, Indian, and bridal styles — and her mission is to pass down this cultural heritage with care, precision, and heart.
+            </p>
+            {/* Badges */}
+            <div style={{ display: "flex", gap: 12, flexWrap: "wrap", justifyContent: "center", marginTop: 4 }}>
+              {["✦ Master Artist", "✦ Online Educator", "✦ Traditional Heritage"].map(tag => (
+                <span key={tag} className="badge" style={{ fontSize: 11 }}>{tag}</span>
+              ))}
+            </div>
+          </div>
+        </Reveal>
+      </section>
+
       {/* COURSE */}
       <section id="Course" data-section="Course" style={{ background: "#f5ede0", padding: "100px 24px" }}>
         <div style={{ maxWidth: 1000, margin: "0 auto" }}>
